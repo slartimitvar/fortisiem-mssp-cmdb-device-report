@@ -23,7 +23,6 @@ foreach ($item in $response.response.result.domains.domain) {
     # Add item to orgArray if id > 2000 and enabled
     if ($item.domainId -gt 2000 -and $item.disabled -eq "false") {
             $orgArray += $item.name
-        }
     }
 
 }
